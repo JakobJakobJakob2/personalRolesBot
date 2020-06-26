@@ -1,0 +1,24 @@
+{
+  "name": "personalrolesbot",
+  "version": "1.0.0",
+  "description": "Discord bot for giving users their own custom roles.",
+  "main": "app.js",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "discord.js": "^12.1.1",
+    "discord.js-commando": "github:discordjs/Commando",
+    "eslint": "^7.2.0",
+    "mongoose": "^5.9.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JakobJakobJakob2/personalRolesBot"
+  },
+  "author": "",
+  "license": "ISC"
+}
