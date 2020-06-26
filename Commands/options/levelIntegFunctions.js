@@ -81,7 +81,6 @@ function roleUpdate(bodyres, GUILDID, TOPROLE, client, z) {
                 resolve();
             } else { // if the user doesn't have a role in the guild or isn't in there at all.
                 minusNum = minusNum+1;
-                console.error("member: " + bodyres.players[z].username + " was not found in their respective database. this is fine. Guild: " + GUILDID);
                 resolve();
             };
         });
