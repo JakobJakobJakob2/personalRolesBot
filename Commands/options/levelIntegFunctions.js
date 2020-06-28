@@ -11,7 +11,6 @@ module.exports = {
         mongoose.model('guildOptions', models.optionSchema).find({ "options.mee6Enabled": true}, async (err, record) => { // gets an array of all guilds with the mee6 integration enabled that we can loop through.
             if (err) {console.error(err); return;}
             console.log("Fetched "+record.length+" guilds with mee6 integration enabled")
-            console.log(typeof record)
             for (let x in record) {
                 sync(record[x].guildId, record[x].options.topRoleId, client);
                 await waitABit(7000);
