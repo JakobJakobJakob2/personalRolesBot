@@ -7,7 +7,7 @@ module.exports = class setRoleCommand extends Command {
             guildOnly: false,
 			memberName: 'colors',
 			aliases: ['colors', 'colours'],
-			description: 'Sends a list of colors you can use with the ´setcolor´ command.',
+			description: 'Sends a list of colors you can use with the `setcolor` command.',
         });
     };
 
