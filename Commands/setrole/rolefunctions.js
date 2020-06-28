@@ -97,8 +97,7 @@ function getAppropiatePosition(guild, userId, toprolePos, options) {
       let bodyjson = JSON.parse(body);
       if (bodyjson.status_code) {
         console.error("Mee6 Api Error Code: "+bodyjson.status_code);
-        reject();
-        return;
+        resolve(toprolePos);
       } else {
         minusNum=0;
         let wasFound;
@@ -135,6 +134,8 @@ function findPos(bodyjson, toprolePos, guild, z) { // Figure out if we need to p
         } catch {
           minusNum = minusNum+1;
         }
+      } else { // if the member doesn't have a role
+        minusNum = minusNum+1;
       }
       resolve();
     });
